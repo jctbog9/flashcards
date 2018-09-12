@@ -32,11 +32,13 @@ vocab_words.shuffle!
 
 while vocab_words.length > 0
   flashcard = vocab_words[0]
-  puts flashcard[0]
-  puts "What is the definition?"
+  puts "Word: #{flashcard[0]}"
+  puts "Press enter to see back of card:"
   gets.chomp
   puts flashcard[1]
+  puts
   puts "--------------"
+  puts
   vocab_words.shift
   vocab_words.shuffle!
 end
